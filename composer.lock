@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "684b9516b86c7a19745390afe3ee2111",
+    "content-hash": "2cfe7edc77b95efeaf4df2f83fe6112a",
     "packages": [
         {
             "name": "aura/cli",
@@ -589,6 +589,74 @@
                 "php"
             ],
             "time": "2019-10-30T14:39:59+00:00"
+        },
+        {
+            "name": "fob/monolog-logger-module",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/kumamidori/Fob.MonologLoggerModule.git",
+                "reference": "a39434bb9dff2eba67ce98cd3dc2b2119e2fe241"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/kumamidori/Fob.MonologLoggerModule/zipball/a39434bb9dff2eba67ce98cd3dc2b2119e2fe241",
+                "reference": "a39434bb9dff2eba67ce98cd3dc2b2119e2fe241",
+                "shasum": ""
+            },
+            "require": {
+                "bear/app-meta": "~1.4",
+                "monolog/monolog": "~1.0",
+                "php": ">=7.2.0",
+                "psr/log": "~1.0",
+                "ray/aop": "~2.0",
+                "ray/di": "~2.0"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "~8.5",
+                "roave/security-advisories": "dev-master"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Fob\\MonologLogger\\": "src"
+                }
+            },
+            "autoload-dev": {
+                "psr-4": {
+                    "Fob\\MonologLogger\\": "tests",
+                    "Fob\\MonologLogger\\Fake\\": "tests/Fake/src"
+                }
+            },
+            "scripts": {
+                "cs": [
+                    "php-cs-fixer fix -v --dry-run",
+                    "phpcs --standard=./phpcs.xml src"
+                ],
+                "cs-fix": [
+                    "php-cs-fixer fix -v",
+                    "phpcbf src"
+                ]
+            },
+            "license": [
+                "BSD-2-Clause"
+            ],
+            "authors": [
+                {
+                    "name": "Nana Yamane",
+                    "email": "shigematsu.nana@gmail.com"
+                }
+            ],
+            "description": "Monolog Application Logger Module for BEAR.Sunday",
+            "keywords": [
+                "BEAR.Sunday",
+                "Monolog"
+            ],
+            "support": {
+                "source": "https://github.com/kumamidori/Fob.MonologLoggerModule/tree/master",
+                "issues": "https://github.com/kumamidori/Fob.MonologLoggerModule/issues"
+            },
+            "time": "2019-12-23T12:31:11+00:00"
         },
         {
             "name": "justinrainbow/json-schema",
@@ -6176,6 +6244,7 @@
     "aliases": [],
     "minimum-stability": "stable",
     "stability-flags": {
+        "fob/monolog-logger-module": 20,
         "roave/security-advisories": 20
     },
     "prefer-stable": false,

@@ -1,11 +1,17 @@
 {
     "name": "fob/monolog-logger-demo",
     "type": "project",
-    "license": "proprietary",
-    "description": "",
+    "license": "cc0",
+    "repositories": [
+        {
+            "type": "vcs",
+            "url": "git@github.com:kumamidori/Fob.MonologLoggerModule.git"
+        }
+    ],
     "require": {
         "php": ">=7.2.0",
-        "bear/package": "^1.9"
+        "bear/package": "^1.9",
+        "fob/monolog-logger-module": "@dev"
     },
     "require-dev": {
         "bear/qatools": "^1.9",
